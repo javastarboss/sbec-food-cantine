@@ -414,4 +414,8 @@ grid-template-columns: repeat(6, 200px);
 #loading-screen span{
   margin-top: 20px;
 }
+}@media(max-width: 450px){
+  .product-containers{
+    height: 430px;
+  }
 }
