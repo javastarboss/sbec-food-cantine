@@ -276,6 +276,7 @@ opacity:1
     scale:0.69
   }.head{
     margin-left: -50px;
+ scale: 0.8
   }
 
   }@media(max-width: 390px){
@@ -288,4 +289,5 @@ opacity:1
     scale: 0.8;
   }
   }
+
 
