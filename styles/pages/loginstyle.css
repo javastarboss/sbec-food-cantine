@@ -277,4 +277,14 @@ opacity:1
   }.head{
     margin-left: -50px;
   }
+
+  }@media(max-width: 390px){
+.main-container{
+    margin-top: 0px;
+    margin-left: -50px;
+    scale:0.69
+  }.head{
+    margin-left: -40px;
+    scale: 0.8;
+  }
   }
