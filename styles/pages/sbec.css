@@ -1,198 +1,421 @@
-:root{
-  --bg: #000;
-  --accent-border: rgb(25, 0, 165);
-  --accent-glow-1: rgba(0,255,213,0.9);
-  --accent-glow-2: rgba(0,162,255,0.5);
-}
-
-/* container top spacing */
 .mains {
-  margin-top: 120px; /* reduced so mobile doesn't need huge scroll */
-  cursor: pointer;
-  background-color: rgb(2, 22, 77);
-  padding-bottom: 28px;
+  margin-top: 195px;
+cursor: pointer;
+background-color: rgb(2, 22, 77);
 }
 
-/* responsive grid: auto-fit makes it adapt to screen width */
 .product-grids {
+  
   display: grid;
-  gap: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  align-items: start;
-  padding: 0 12px;
-  box-sizing: border-box;
+
+  grid-template-columns: repeat(8, 1fr);
+}
+@media (max-width: 2000px) {
+  .product-grids {
+    grid-template-columns: repeat(7, 1fr);
+    
+  }
 }
 
-/* product card */
-.product-containers {
-  position: relative;
+/* @media is used to create responsive design (making the
+   website look good on any screen size). This @media
+   means when the screen width is 2000px or less, we
+   will divide the grid into 7 columns instead of 8. */
+
+/* This @media means when the screen width is 1600px or
+   less, we will divide the grid into 6 columns. */
+@media (max-width: 1600px) {
+  .product-grids {
+    grid-template-columns: repeat(5, 1fr);
+    
+  }
+}
+
+@media (max-width: 1200px) {
+  .product-grids {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 999px) {
+  .product-grids {
+    grid-template-columns: repeat(3, 1fr);
+  } 
+}
+
+@media (max-width: 730px) {
+  .mains {
+  margin-top: 180px;
+  margin-left: 33px;
+  margin-right: 33px;
+
+}
+  .product-grids {
+    grid-template-columns: repeat(2, 1fr);}
+   
+}
+
+@media (max-width: 520px) {
+  .product-grids {
+    grid-template-columns: repeat(2, 1fr);
+  }.product-containers {
+  border: solid rgb(2, 50, 73) 5px;
+  margin: 15px 9px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+ position: relative;
+  
+
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  margin: 8px;
-  padding: 16px;
-  background-color: #000;
-  border: 5px solid var(--accent-border);
-  transition: box-shadow 0.3s ease, transform 0.15s ease;
-  box-sizing: border-box;
-  min-height: 320px;
 }
-
-/* hover glow/scale */
-.product-containers:hover {
-  box-shadow: 0 0 20px var(--accent-glow-1), 0 0 45px var(--accent-glow-2);
-  transform: translateY(-6px) scale(1.02);
-}
-
-/* image area: keep images centered and contained */
 .product-image-containers {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 180px;
-  overflow: hidden;
-  margin-bottom: 12px;
-  margin-top: 0;
-  flex-shrink: 0;
+height: 150px;
+  margin-bottom: 30px;
+  margin-top: -40px;
+
 }
-.product-images {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* prevents distortion and clipping */
-  display: block;
 }
 
-/* product title */
-.product-names {
-  text-align: center;
-  margin: 8px 0;
-  font-weight: 700;
-  color: #fff;
-  min-height: 44px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+
+/*.product-containers {
+  border: solid rgb(1, 1, 139) 5px;
+  margin: 8px 5px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+ position: relative;
+;
+background-color: black;
+  display: flex;
+  flex-direction: column;
+}*/
+
+
+.product-containers {
+  position: relative;
+  margin: 8px 5px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+ 
+  border: solid rgb(25, 0, 165) 5px;
+
+  background-color: #000; 
+
+ 
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
 }
 
-/* rating and counts row: flexible and responsive */
-.product-rating-row {
+
+.product-containers:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 213, 0.9), 0 0 45px rgba(0, 162, 255, 0.5);
+  transform: scale(1.02);
+}
+
+
+.product-image-containers {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  margin: 8px 0 6px;
+height: 250px;
+  margin-bottom: 30px;
+  margin-top: -40px;
+
 }
+
+.product-images {
+  /* Images will overflow their container by default. To
+    prevent this, we set max-width and max-height to 100%
+    so they stay inside their container. */
+  width: 100%;
+height: 100%;
+}
+
+.product-names {
+  text-align: center;
+  height: 40px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  align-items: center;
+  text-align: center;
+  margin-left: 80px;
+  scale: 1.2;
+
+}
+
 .product-stars {
   width: 100px;
-  max-width: 30%;
+  margin-right: 6px;
+  
 }
+
 .product-rating-count {
   color: rgb(1, 124, 182);
   cursor: pointer;
-  font-weight: 700;
+  margin-top: 3px;
+  margin-right: 20px;
 }
 
-/* prices */
 .prices {
-  font-weight: 800;
-  margin: 8px 0;
+  font-weight: 700;
+  margin-bottom: 10px;
   text-align: center;
   color: red;
-  font-size: 1.05rem;
 }
 
-/* quantity / spacer / added message */
-.product-spacer { flex: 1; }
+.product-quantity-containers {
+  margin-bottom: 17px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
 .added-to-cart {
   color: rgb(6, 125, 98);
-  font-size: 15px;
+  font-size: 16px;
+
   display: flex;
   align-items: center;
-  gap: 8px;
+  margin-bottom: 20px;
+
+  /* At first, the "Added to cart" message will
+     be invisible. Use JavaScript to change the
+     opacity and make it visible. */
   opacity: 0;
-  transition: opacity .25s ease;
-}
-.added-to-cart-visible { opacity: 1; }
-
-/* action buttons centered and sticky at bottom of each card on tall screens */
-.card-actions {
-  display:flex;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 12px;
 }
 
-/* add-to-cart button (sensible defaults) */
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
 .add-to-cart-buttons {
-  position: relative; /* not broken sticky */
-  padding: 10px 18px;
-  font-size: 15px;
-  font-weight: 700;
-  border-radius: 28px;
-  background: linear-gradient(to top, rgb(11,218,218), rgb(0,38,255));
-  box-shadow: 0 0 25px rgb(2,21,194);
+  position: -webkit-sticky;
+z-index: 0;
+justify-content: center;
+margin:auto;
+left: 70px;
+align-items: center;
+text-align: center;
+ bottom: 40px;
+ padding-bottom: 800px;
+color: rgb(0, 0, 0);
+font-size: 15px;
+padding: 12px 20px;
+margin-bottom: -20px;
+font-weight: bold;
+  border-radius: 50px;
+ background:linear-gradient(to top, rgb(11, 218, 218), rgb(0, 38, 255));
+  box-shadow: 0 0 25px rgb(2, 21, 194) ;
   border: none;
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.18s ease, opacity 0.15s ease;
+   border-bottom: rgb(243, 243, 243) solid 3px;
+  transition:transform 0.25s ease-in, background-color 0.15s ease-in-out ;
+}.add-to-cart-buttons:hover{
+  opacity: 0.5;
+}.add-to-cart-buttons:active{
+transform: scale(0.5);
 }
-.add-to-cart-buttons:hover { opacity: 0.9; }
-.add-to-cart-buttons:active { transform: scale(.98); }
+.like-container{
+  display: grid;
+  grid-template-columns: 30px 30px;
 
-/* like/dislike layout — use a small row instead of many absolute positions */
-.like-dislike-row {
-  display:flex;
-  justify-content: space-between;
+}.admin{
+  position: absolute;
+margin-top: 100px;
+background-color: black;
+border: none;
+
+padding: 10px;
+}.added-to-cart-visible{
+    opacity: 1;
+     color: rgb(6, 125, 98);
+  font-size: 17px;
+text-align: center;
+  display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 6px;
+  margin-left: 80px;
+  margin-bottom: 8px;
+  font-weight: 800;
+}.like-container{
+position: relative;
+ z-index: 1;
 }
-.like-dislike-row .like, .like-dislike-row .dislike {
-  width: 36px;
-  height: 36px;
-  cursor: pointer;
-}
-.like-count, .dislike-count {
+.like{
+  position: absolute;
+ left: 60px;
+   z-index: 1;
+   width:40px;
+   top: -15px;
+}.dislike{
+  position:absolute;
+right:60px;
+ z-index: 1;
+width: 40px;
+top:-15px
+}.like-count{
+  position: absolute;
+  z-index: 1;
+   font-weight: 700;
+bottom: -60px;
+ left: 70px;
+
+}.dislike-count{
+  position: absolute;
+  z-index: 1;
   font-weight: 700;
-  font-size: 0.95rem;
-  color: #fff;
+   right:70px;
+   bottom: -60px;
+
+;
+}/* Add this to your CSS */
+/* Add this to your CSS */
+.rating-wrapper {
+  position: relative;
+  width: 80px;            /* <--- change this to shrink/expand the rating UI */
+  height: auto;
+  display: inline-block;
+  user-select: none;
 }
 
-/* rating wrapper (keeps your overlay technique) */
-.rating-wrapper { position: relative; width: 80px; display:inline-block; }
-.rating-image { width:100%; height:auto; display:block; pointer-events:none; }
-.rating-overlay { position:absolute; inset:0; cursor:pointer; touch-action:none; }
+/* the star image scales to the wrapper width */
+.rating-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;   /* ensure overlay catches the events, not the image */
+}
 
-/* cash & stick buttons */
-.cash, .stick {
+/* invisible overlay that catches pointer events exactly over the image */
+.rating-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  touch-action: none;     /* important for pointer events on touch devices */
+  cursor: pointer;
+  /* background: rgba(255,0,0,0.1);  -- use to debug overlay */
+}
+
+.cash{
   border-radius: 50px;
   border: none;
-  padding: 6px 20px;
-  color: #fff;
-  font-weight: 700;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-  cursor: pointer;
-  transition: transform .12s ease;
+  padding: 3px 25px;
+  color: rgb(255, 255, 255);
+  background:linear-gradient(to right, rgb(5, 173, 202), rgb(119, 2, 155));
+  border-bottom: rgb(255, 255, 255) solid 3px;
+box-shadow: 0 0 15px rgb(0, 0, 0);
+}.stick{ color: rgb(255, 255, 255);
+background: linear-gradient(to right, rgb(170, 6, 6), rgb(255, 136, 0));
+  border-bottom: rgb(255, 255, 255) solid 3px;
+box-shadow: 0 0 15px rgb(0, 0, 0);
+ 
+}.cash, .stick{
+transition: transform 0.15s ease;
+cursor: pointer;
 }
-.cash { background: linear-gradient(to right, rgb(5,173,202), rgb(119,2,155)); border-bottom: 3px solid #fff; }
-.stick { background: linear-gradient(to right, rgb(170,6,6), rgb(255,136,0)); border-bottom: 3px solid #fff; }
-.cash:active, .stick:active { transform: scale(.95); }
+.cash:active, .stick:active{
+  transform: scale(0.8);
+}
+.likee{
+  display: none;
+}@media(max-width: 500px){
+  .search-button{
+    border-radius: 100px;
+  }.product-containers{
 
-/* small-screen tweaks (iPhone 11 Pro width ≤ 375) */
-@media (max-width: 400px) {
-  :root { --card-min: 140px; }
-  .product-grids { gap: 10px; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); padding: 0 8px; }
-  .product-image-containers { height: 150px; }
-  .product-containers { padding: 12px; min-height: 300px; margin: 6px; }
-  .product-names { font-size: 14px; min-height: 40px; }
-  .product-stars { width: 70px; }
-  .add-to-cart-buttons { padding: 8px 14px; font-size: 14px; border-radius: 22px; }
-  .like-dislike-row { gap: 6px; }
+  }.mains{
+    margin-left: 0;
+    margin-right: 0;
+  }.like{
+    margin-left: -20px;
+    scale: 0.7;
+  }.dislike{
+    margin-right: -20px;
+    scale: 0.7;
+  }.dislike-count{
+    margin-right: -15px;
+  }.like-count{
+    margin-left: -15px;
+  }.info{
+    padding: 10px 30px;
+  }#logoutBtn{
+    padding: 10px 20px;
+  }.add-to-cart-buttons{
+  scale: 0.7;
+  }.inside{
+    scale: 0.7;
+    margin-left: -10px;
+  }.rating-image{
+    scale: 0.8;
+  }.rating-count{
+    margin-left: -25px;
+  }.product-grids{
+   
+  }.like-container{
+    margin-top: 10px;
+  }.amount{
+    font-size: 25px;
+  }.logo{
+    margin-left: -20px;
+  }.cash{
+    scale: 0.87;
+  }.food{
+    font-size: 15px;
+  }.discription{
+    margin-top: 0px;
+  }.discription1{
+    margin-top: 0;
+  }
+}.stick{
+  display: non;
+}.he{
+  display: none;
+}.below{
+
+}.divs {
+  z-index: 5;
+  font-size: 25px;
+  color: white; 
+  margin-top:50px
 }
 
-/* optional: slightly wider layout for tablet/desktop */
-@media (min-width: 900px) {
-  .product-image-containers { height: 250px; }
-  .product-containers { min-height: 360px; }
+.maining {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  margin-top: 100px;
+  display:grid;
+grid-template-columns: repeat(6, 200px);
+  justify-content: left;  
+  align-items: left;     
+}.img{
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 10px;
+}@media(max-width: 400px){
+#loading-screen span{
+  margin-top: 20px;
+}
+}@media(max-width: 450px){
+  .product-containers{
+    height: 430px;
+  }
 }
