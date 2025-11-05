@@ -289,7 +289,17 @@ opacity:1
     margin-left: -40px;
     scale: 0.8;
   }
+  }@media(max-width: 360px){
+.main-container{
+    margin-top: 0px;
+    margin-left: -65px;
+    scale:0.69
+  }.head{
+    margin-left: -50px;
+    scale: 0.8;
   }
+  }
+
 
 
 
