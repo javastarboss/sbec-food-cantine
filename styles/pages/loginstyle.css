@@ -257,7 +257,8 @@ opacity:1
 }
 @media(max-width: 580px){
   .head{
-    left:100px
+    left:100px;
+    scale: 0.8;
   }.robot{
     display: none;
   }.img{
@@ -265,7 +266,7 @@ opacity:1
   }.main-container{
     margin-top: 100px;
     margin-left: -30px;
-    scale:0.9
+    scale:0.69
   }#loading-screen span{
     font-size: 20px;
   }
@@ -289,5 +290,6 @@ opacity:1
     scale: 0.8;
   }
   }
+
 
 
