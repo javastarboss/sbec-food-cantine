@@ -15,6 +15,10 @@ background-color: rgb(2, 22, 77);
     grid-template-columns: repeat(7, 1fr);
     
   }
+}@media (max-width: 320px){
+  .sbec-header-middle-section{
+    margin-left:10px
+  }
 }
 
 /* @media is used to create responsive design (making the
