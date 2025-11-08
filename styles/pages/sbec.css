@@ -46,7 +46,8 @@ background-color: rgb(2, 22, 77);
     grid-template-columns: repeat(3, 1fr);
   } 
 }
-
+link-primary{color: red
+}
 @media (max-width: 730px) {
   .mains {
   margin-top: 180px;
