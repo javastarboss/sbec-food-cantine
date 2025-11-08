@@ -166,7 +166,7 @@ height: 100%;
 }
 
 .product-rating-count {
-  color: rgb(1, 124, 182);
+  color: red;
   cursor: pointer;
   margin-top: 3px;
   margin-right: 20px;
