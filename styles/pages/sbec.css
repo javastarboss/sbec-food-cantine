@@ -17,7 +17,7 @@ background-color: rgb(2, 22, 77);
   }
 }@media (max-width: 320px){
   .sbec-header-middle-section{
-    margin-left:10px
+    margin-right:-10px
   }
 }
 
