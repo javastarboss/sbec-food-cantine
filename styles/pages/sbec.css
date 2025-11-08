@@ -420,6 +420,6 @@ grid-template-columns: repeat(6, 200px);
 }
 }@media(max-width: 450px){
   .product-containers{
-    height: 430px;
+    height: 400px;
   }
 }
