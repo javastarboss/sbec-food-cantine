@@ -422,6 +422,8 @@ grid-template-columns: repeat(6, 200px);
 }@media(max-width: 450px){
   .product-containers{
     height: 400px;
+  }.product-images{
+    height:180px;
   }
 }
 .rating-count{
