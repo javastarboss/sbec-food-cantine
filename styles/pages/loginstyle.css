@@ -300,6 +300,18 @@ opacity:1
   }
   }
 
+@media(max-width: 414px){
+.main-container{
+    margin-top: 0px;
+    margin-left: -40px;
+    scale:0.69
+  }.head{
+    margin-left: -30px;
+ scale: 0.8
+  }}
+
+
+
 
 
 
