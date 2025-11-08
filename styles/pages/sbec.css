@@ -424,3 +424,6 @@ grid-template-columns: repeat(6, 200px);
     height: 400px;
   }
 }
+.rating-count{
+  color: red;
+}
