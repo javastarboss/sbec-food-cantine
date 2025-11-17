@@ -1,7 +1,7 @@
 .mains {
   margin-top: 195px;
 cursor: pointer;
-background-color: rgb(2, 22, 77);
+background-color: rgb(97, 2, 2);
 }
 
 .product-grids {
@@ -107,20 +107,22 @@ background-color: black;
   display: flex;
   flex-direction: column;
 
- 
-  border: solid rgb(25, 0, 165) 5px;
+ border: solid rgb(146, 1, 1) 5px;
+  /*border: solid rgb(25, 0, 165) 5px;*/
 
   background-color: #000; 
-
+  box-shadow: 0 0 25px rgb(0, 0, 0), 0 0 45px rgb(0, 0, 0);
  
-  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  transition: box-shadow 0.3s ease, scale 0.3s ease;
 }
 
 
 .product-containers:hover {
-  box-shadow: 0 0 20px rgba(0, 255, 213, 0.9), 0 0 45px rgba(0, 162, 255, 0.5);
-  transform: scale(1.02);
+scale: calc(1.07);
+  box-shadow: 0 0 35px rgb(255, 5, 5), 0 0 55px rgb(255, 5, 5);
+
 }
+
 
 
 .product-image-containers {
@@ -223,8 +225,10 @@ padding: 12px 20px;
 margin-bottom: -20px;
 font-weight: bold;
   border-radius: 50px;
- background:linear-gradient(to top, rgb(11, 218, 218), rgb(0, 38, 255));
-  box-shadow: 0 0 25px rgb(2, 21, 194) ;
+background:linear-gradient(to top, rgb(255, 217, 0),rgb(255, 0, 0),red,red, rgb(255, 0, 0));
+/*background:linear-gradient(to top, rgb(11, 218, 218), rgb(0, 38, 255));*/
+ box-shadow: 0 0 25px rgb(170, 1, 1) ;
+ /* box-shadow: 0 0 25px rgb(2, 21, 194) ;*/
   border: none;
    border-bottom: rgb(243, 243, 243) solid 3px;
   transition:transform 0.25s ease-in, background-color 0.15s ease-in-out ;
@@ -425,7 +429,6 @@ grid-template-columns: repeat(6, 200px);
   }.product-images{
     height:180px;
   }
-}
-.rating-count{
-  color: red;
+}.rating-count{
+  color: rgb(0, 132, 255);
 }
