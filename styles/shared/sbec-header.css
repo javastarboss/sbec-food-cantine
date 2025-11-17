@@ -1,6 +1,6 @@
 .sbec-header {
   
-  background: linear-gradient(135deg, rgb(53, 52, 52));
+  background: linear-gradient(135deg, #5c010e);
   padding-left: 15px;
   padding-right: 15px;
 margin-bottom: 30px;
@@ -279,9 +279,9 @@ color: #000;
  padding: 5px 5px;
  border-radius: 20px;
 z-index: 1;
-background:linear-gradient(to top, rgb(11, 218, 218), rgb(0, 38, 255));
-  box-shadow: 0 0 25px rgb(2, 21, 194) ;
-
+background:linear-gradient(to top, rgb(233, 232, 163),red,red, rgb(255, 0, 0));
+  box-shadow: 0 0 25px rgb(116, 24, 1) ;
+  border-bottom: 2px solid;
 }.all{
 
   background:linear-gradient(to top, rgb(0, 204, 255), rgb(255, 30, 0));
