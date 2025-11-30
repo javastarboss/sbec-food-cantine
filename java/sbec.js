@@ -100,8 +100,7 @@ window.location.href='sbec.html'
 let foods = '';
 food.forEach((eat) => {
   foods += `
-<div class="product-containers"   >
-
+  <div class="product-containers" >
     <div class="product-image-containers" >
       <img class="product-images" src="${eat.Image} " >
     </div>
@@ -469,11 +468,7 @@ let foods = '';
 food.forEach((eat) => {
   foods += `
   
-  <div class="product-containers"  data-aos="fade-in"
-     data-aos-offset="100"
-     data-aos-delay="0"
-     data-aos-duration="200"
-     data-aos-easing="ease-in" >
+  <div class="product-containers"   >
 
     <div class="product-image-containers" >
       <img class="product-images" src="${eat.Image} " >

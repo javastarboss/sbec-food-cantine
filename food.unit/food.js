@@ -10,140 +10,7 @@ export function getfood(foodid) {
   return matchingfood;
 }
 
-export const food = [
- 
-  {
-    Image:
-      "foods/v.png",
-    name: "Chicken Yasa",
-    rating: {
-      stars: 2.5,
-      count: 99,
-    },
-    price: 100,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-
-    }
-    ,info:' is one of the most popular and classic dishes in Gambian and Senegalese cuisine. Chicken Yassa, while often made with simple ingredients, contains several potential allergens that individuals should be aware of.',
-    Allergies2: ' Mustard is one of the main flavor components (usually Dijon mustard) and is listed as one of the Big 9 major food allergens in some regions (like the EU and Canada).'
-    ,Allergies1: 'Onions are the main bulk of the dish. While rare, some people have an intolerance or allergy to onions and garlic (foods in the allium family).'
-    
-  }, {
-    Image: "foods/p.png",
-    name: "Pizza",
-    rating: {
-      stars: 2.5,
-      count: 67,
-    },
-    price: 150,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info: 'Pizza is a savory Italian dish consisting of a usually rounded, flattened base of leavened wheat dough topped with a tomato-based sauce, cheese (typically mozzarella), and various other ingredients (toppings), which is then baked.'
-    
-    ,Allergies1: 'A common ingredient in pizza crust, a source of gluten intolerance. '
-    ,Allergies2:' An ingredient in the dough, which can cause reactions in some individuals.  '
-  },
-  {
-    Image: "foods/e.png",
-    name: "Ebbeh",
-    rating: {
-      stars: 2.5,
-      count: 29,
-    },
-    price: 50,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info:"Ebbeh is a beloved, hearty, one-pot soup or stew that is one of The Gambia's most popular street foods. It is a thick, creamy dish primarily made from cassava"
-    ,Allergies1: "Crabs, Shrimp (Prawns), and often Mussels or Clams are central and defining ingredients in Ebbeh, making this the highest allergen risk."
-    ,Allergies2:' Smoked fish (such as Catfish, Bonga, or Mackerel) is a core component used to flavor and enrich the soup.  '
-  },
-  {
-    Image: "foods/sss.png",
-    name: "Chicken shawarma",
-    rating: {
-      stars: 2.5,
-      count: 99,
-    },
-    price: 150,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info:"Chicken Shawarma is a popular Middle Eastern street food where seasoned chicken is stacked in a cone-like shape on a vertical rotisserie (spit) and slow-roasted."
-    ,Allergies1: " The dish is almost always served wrapped in pita bread or a similar flatbread made from wheat flour. "
-    ,Allergies2:' The classic accompaniment to Shawarma is Tahini, a sauce/paste made from ground sesame seeds. It is an extremely common condiment. '
-  
-  },
-  {
-    Image: "foods/y.png",
-    name: "Chicken Vermecell",
-    rating: {
-      stars: 3,
-      count: 99,
-    },
-    price: 150,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info:"Chicken Vermicelli features thin, delicate vermicelli noodles (thin pasta, often made from wheat) tossed with pieces of chicken and a rich, deeply flavored sauce. The color of the noodles is usually a deep golden-yellow."
-    ,Allergies1: " A protein found in grains like wheat, barley, and rye. A major allergen causing celiac disease or wheat allergy."
-    ,Allergies2:' The protein source itself, though less common than other allergens, can cause an allergy.'
-  
-  },
-  {
-    Image: "foods/m.jpeg",
-    name: "Meat Pie",
-    rating: {
-      stars: 2.5,
-      count: 99,
-    },
-    price: 30,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info:"The Gambian Meat Pie is similar to a British meat pie or an Empanada/Fataya, consisting of a savory filling encased in a firm, often fried or baked, pastry crust.",
-    Allergies1:"The entire pie crust is made from wheat flour (typically all-purpose flour), making it a major gluten source. ",
-    Allergies2:"The pastry recipe often calls for butter or margarine (which often contains whey/milk solids) to create a flaky or tender crust. "
-  },
-
-
-
-
-  {
-    Image:
-     "foods/bu.png",
-    name: "Burger Beef",
-    rating: {
-      stars: 3,
-      count: 49,
-    },
-    price: 150,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info:"A standard Western-style beef patty served on a bun, augmented by a slice of cheese. features a seasoned ground beef patty cooked and placed inside a sliced, often toasted, wheat bun. ",
-    Allergies1:"The burger bun is a major source of wheat/gluten. Additionally, breadcrumbs or flour may be mixed into the beef patty as a binding agent.",
-    Allergies2:"Sesame seeds are the standard topping for most commercially available burger buns, and the oil from the seeds is a common allergen."
-  },
-  {
-    Image: "foods/b.png",
-    name: "Boabab juice",
-    rating: {
-      stars: 4.5,
-      count: 76,
-    },
-    price: 30,
-    thumbs: {
-      thumbsup: 20,
-      thumbsdown: 25,
-    },info:"Baobab juice, known locally as Bouye (or Bouye), is a traditional, refreshing, and creamy Gambian beverage made from the dry, powdery pulp of the large, hard-shelled baobab fruit.",
-    Allergies1:" is introduced via the use of evaporated milk, condensed milk, or powdered milk to create the creamy texture; consumption by a sensitive individual will trigger typical dairy allergy symptoms like hives, itching, or digestive distress.",
-    Allergies2:". Additionally, due to its exceptionally high Fiber content, overconsumption of the juice may lead to mild, temporary Gastrointestinal Distress such as bloating, gas, or diarrhea."
-  },
-  {
+export const food = [  {
     Image:
       "foods/c.png" ,
     name: "chicken with fries",
@@ -221,6 +88,139 @@ export const food = [
     },info:"This dish involves pre-cooked or raw sausages that have been coated in a layer of bread crumbs to create a crisp exterior upon frying or baking.",
     Allergies1:"Wheat (Gluten) is present in the bread crumbs (which are made from bread) and often in the sausages themselves as a filler; ingestion by a sensitive person will trigger typical allergic symptoms or chronic digestive distress (Celiac reaction). ",
     Allergies2:" Egg is highly likely to be used as the wash/binder that holds the bread crumbs to the sausage; an egg allergy can cause reactions ranging from skin irritation and hives to severe respiratory or gastrointestinal issues. "
+  },
+
+ 
+  {
+    Image:
+      "foods/v.png",
+    name: "Chicken Yasa",
+    rating: {
+      stars: 2.5,
+      count: 99,
+    },
+    price: 100,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+
+    }
+    ,info:' is one of the most popular and classic dishes in Gambian and Senegalese cuisine. Chicken Yassa, while often made with simple ingredients, contains several potential allergens that individuals should be aware of.',
+    Allergies2: ' Mustard is one of the main flavor components (usually Dijon mustard) and is listed as one of the Big 9 major food allergens in some regions (like the EU and Canada).'
+    ,Allergies1: 'Onions are the main bulk of the dish. While rare, some people have an intolerance or allergy to onions and garlic (foods in the allium family).'
+    
+  }, {
+    Image: "foods/p.png",
+    name: "Pizza",
+    rating: {
+      stars: 2.5,
+      count: 67,
+    },
+    price: 150,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info: 'Pizza is a savory Italian dish consisting of a usually rounded, flattened base of leavened wheat dough topped with a tomato-based sauce, cheese (typically mozzarella), and various other ingredients (toppings), which is then baked.'
+    
+    ,Allergies1: 'A common ingredient in pizza crust, a source of gluten intolerance. '
+    ,Allergies2:' An ingredient in the dough, which can cause reactions in some individuals.  '
+  },
+  {
+    Image: "foods/e.png",
+    name: "Ebbeh",
+    rating: {
+      stars: 2.5,
+      count: 29,
+    },
+    price: 50,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info:"Ebbeh is a beloved, hearty, one-pot soup or stew that is one of The Gambia's most popular street foods. It is a thick, creamy dish primarily made from cassava"
+    ,Allergies1: "Crabs, Shrimp (Prawns), and often Mussels or Clams are central and defining ingredients in Ebbeh, making this the highest allergen risk."
+    ,Allergies2:' Smoked fish (such as Catfish, Bonga, or Mackerel) is a core component used to flavor and enrich the soup.  '
+  },
+  {
+    Image: "foods/ss.jpg",
+    name: "Chicken shawarma",
+    rating: {
+      stars: 2.5,
+      count: 99,
+    },
+    price: 150,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info:"Chicken Shawarma is a popular Middle Eastern street food where seasoned chicken is stacked in a cone-like shape on a vertical rotisserie (spit) and slow-roasted."
+    ,Allergies1: " The dish is almost always served wrapped in pita bread or a similar flatbread made from wheat flour. "
+    ,Allergies2:' The classic accompaniment to Shawarma is Tahini, a sauce/paste made from ground sesame seeds. It is an extremely common condiment. '
+  
+  },  {
+    Image: "foods/mm.jpg",
+    name: "Meat Pie",
+    rating: {
+      stars: 2.5,
+      count: 99,
+    },
+    price: 30,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info:"The Gambian Meat Pie is similar to a British meat pie or an Empanada/Fataya, consisting of a savory filling encased in a firm, often fried or baked, pastry crust.",
+    Allergies1:"The entire pie crust is made from wheat flour (typically all-purpose flour), making it a major gluten source. ",
+    Allergies2:"The pastry recipe often calls for butter or margarine (which often contains whey/milk solids) to create a flaky or tender crust. "
+  },
+   {
+    Image:
+     "foods/bu.png",
+    name: "Burger Beef",
+    rating: {
+      stars: 3,
+      count: 49,
+    },
+    price: 150,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info:"A standard Western-style beef patty served on a bun, augmented by a slice of cheese. features a seasoned ground beef patty cooked and placed inside a sliced, often toasted, wheat bun. ",
+    Allergies1:"The burger bun is a major source of wheat/gluten. Additionally, breadcrumbs or flour may be mixed into the beef patty as a binding agent.",
+    Allergies2:"Sesame seeds are the standard topping for most commercially available burger buns, and the oil from the seeds is a common allergen."
+  },
+
+
+
+
+ {
+    Image: "foods/vv.png",
+    name: "Chicken Vermecell",
+    rating: {
+      stars: 3,
+      count: 99,
+    },
+    price: 150,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info:"Chicken Vermicelli features thin, delicate vermicelli noodles (thin pasta, often made from wheat) tossed with pieces of chicken and a rich, deeply flavored sauce. The color of the noodles is usually a deep golden-yellow."
+    ,Allergies1: " A protein found in grains like wheat, barley, and rye. A major allergen causing celiac disease or wheat allergy."
+    ,Allergies2:' The protein source itself, though less common than other allergens, can cause an allergy.'
+  
+  },
+
+  {
+    Image: "foods/b.png",
+    name: "Boabab juice",
+    rating: {
+      stars: 4.5,
+      count: 76,
+    },
+    price: 30,
+    thumbs: {
+      thumbsup: 20,
+      thumbsdown: 25,
+    },info:"Baobab juice, known locally as Bouye (or Bouye), is a traditional, refreshing, and creamy Gambian beverage made from the dry, powdery pulp of the large, hard-shelled baobab fruit.",
+    Allergies1:" is introduced via the use of evaporated milk, condensed milk, or powdered milk to create the creamy texture; consumption by a sensitive individual will trigger typical dairy allergy symptoms like hives, itching, or digestive distress.",
+    Allergies2:". Additionally, due to its exceptionally high Fiber content, overconsumption of the juice may lead to mild, temporary Gastrointestinal Distress such as bloating, gas, or diarrhea."
   },
   {
     Image: "foods/ss.png",
