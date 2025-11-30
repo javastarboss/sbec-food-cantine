@@ -511,6 +511,7 @@ span { color: var(--accent); }
 .type {
   z-index: 99;
   font-size: 2.7rem;
+   max-width: 1100px;
   font-weight: 600;
 }
 .type .span { position: relative; }
@@ -549,7 +550,7 @@ span { color: var(--accent); }
 }
 
 
-p { font-size: 2.7rem; font-weight: 600; min-width: 280px; }
+p { font-size: 2.7rem; font-weight: 600; min-width: 280px; max-width: 1100px; }
 p span::before {
   content: '';
   color: rgb(238,255,0);
@@ -628,3 +629,4 @@ html, body {
     font-size: 18px;
   }
 }
+
