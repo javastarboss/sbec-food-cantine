@@ -69,7 +69,7 @@ font-size: 17px;
 }.product-price{
 margin-top: 10px;
 }.logo{
-  width: 20vh;
+  width: 15vh;
 }@media(max-width: 999px){
   .main,.main2{
     grid-template-columns:1fr;

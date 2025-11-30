@@ -14,7 +14,7 @@ margin-top: 130px;
   padding: 10px 50px 10px 25px;
   left:40px;
   top: 20px;
-  background:linear-gradient(to right, rgb(117, 116, 116), rgb(75, 75, 75), rgb(175, 174, 174)) ;
+  background:linear-gradient(to right, rgba(117, 116, 116, 0.616), rgb(75, 75, 75), rgb(175, 174, 174)) ;
   border-radius: 40px;
   justify-content: center;
   align-items: center;
@@ -41,7 +41,7 @@ grid-template-rows:  10px 40px 10px 40px ;
   padding: 50px;
   padding-top: 130px;
   padding-bottom: 70px;
- background:linear-gradient(to right, rgba(128, 128, 128, 0.432), rgb(68, 64, 64), rgb(151, 150, 150));;
+ background:linear-gradient(to right, rgba(128, 128, 128, 0.632), rgba(68, 64, 64, 0.486), rgba(151, 150, 150, 0.514));;
 scale: 1;
 z-index: 2;
 border-radius: 20px;
@@ -126,7 +126,7 @@ padding-bottom: 20px;
 .head{
 text-align: center;position: fixed; font-weight: 800;font-size:20px; left:510px; top: 25px;z-index:2;
 }
-@media(max-width: 1800px){}
+@media(max-width: 3800px){}
 .backs{
     opacity:0
   }.main-container{
@@ -299,7 +299,6 @@ opacity:1
     scale: 0.8;
   }
   }
-
 @media(max-width: 414px){
 .main-container{
     margin-top: 0px;
@@ -309,9 +308,6 @@ opacity:1
     margin-left: -30px;
  scale: 0.8
   }}
-
-
-
 
 
 
